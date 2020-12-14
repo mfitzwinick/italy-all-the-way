@@ -4,6 +4,8 @@ var PORT = process.env.PORT || 3000;
 
 var app = express();
 
+// app.use(routes);
+
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
@@ -15,7 +17,7 @@ app.use(express.json());
 require("./app/routes/html-routes.js")(app);
 require("./app/routes/api-routes.js")(app);
 
-// app.use(routes);
+
 
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
