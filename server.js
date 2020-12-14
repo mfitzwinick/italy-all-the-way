@@ -10,11 +10,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-
 // var routes = require("filename");
+
+require("./app/routes/html-routes.js")(app);
+require("./app/routes/api-routes.js")(app);
 
 // app.use(routes);
 
-app.listen(PORT, function() {
-  console.log("App now listening at localhost:" + PORT);
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
