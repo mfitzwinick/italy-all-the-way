@@ -1,5 +1,5 @@
 var unirest = require("unirest");
-const db = require("../app/models");
+const db = require("../../models");
 // const connection = require("../app/config/connection");
 // connection.query("")
 function recipeSearch(){
