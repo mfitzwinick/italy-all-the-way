@@ -11,12 +11,16 @@ li{
 
 #main,
 #sub1,
-#sub2,
-#carousel{
+#sub2{
     color: gray;
     padding: 1.5rem;
     margin: 2rem; 
     background-color: white; 
     text-align: center;
-    box-shadow: 0px 2px 5px;
+     
+}
+
+#italiatoday{
+    width:15%;
+    height:auto;
 }
