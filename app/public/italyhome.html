@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!--  navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
     <div class="container">
@@ -22,13 +21,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">HOME
-              <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="italyhome.html">ITALY AT HOME</i></a>
+            <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="italytravel.html">TRAVEL</i></a>
@@ -38,36 +37,55 @@
     </div>
   </nav>
 
-    <!--  body -->
   <div class="container" id="body">
     <div class="row">
 
-      <!--  main container -->
+      <div class="col-md-7">
+        <div class="container" id="main">                 
+          maybe a little blurb about italian traditional dishes/music/culture or italian phrases to practice at home 
+        </div>
 
-      <div class="col-md-8">
-        <div class="container" id="main">
-
-          main blurb
-                             
+        <div class="container" id="carousel">                 
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img\countryside.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img\bicyle.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.etsystatic.com/12408679/r/il/abe5eb/1663730592/il_1588xN.1663730592_5w2z.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.cntraveler.com/photos/5e99f3949fc81500085a4ee1/master/w_4500,h_2999,c_limit/Atrani-Italy-GS0943065.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://storage-prtl-co.imgix.net/endor/articles/1615/images/1523449083_shutterstock_363437531.jpg?max-w=660&max-h=532&fit=crop&auto=format,compress" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!--  side containers -->
-      <div class="col-md-4">
-
-        <!--  side 1 -->
+      <div class="col-md-5">
         <div class="container" id="sub1">
-          <p> 
-            Let the 'Italy at Home' page give you a taste of the beautiful country without traveling!             
-          </p>                
-        </div>
+            <p> recipe div
+            </p>                
+        </div>  
 
-        <!--  side 2 -->
         <div class="container" id="sub2">
-          <p> 
-            Planning to travel? Check out the travel page for top recommendations on hotels, restaurants, and brilliant sights to see.
+          <p> music box div
           </p>   
-        </div>            
+        </div>           
       </div>
 
     </div>
