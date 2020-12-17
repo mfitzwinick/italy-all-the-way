@@ -37,7 +37,7 @@ choices();
             url: queryURL2,
             method: "GET",
         }).then(function(response) {
-            const arr = response.sort((a, b) => (a.rating > b.rating) ? 1 : -1)
+            const arr = response.sort((a, b) => (a.rating < b.rating) ? 1 : -1)
             for(let i = 0; i < arr.length; i++){
                 if(arr[i].location == $("#citySearch").val()){
                     console.log(arr[i])
@@ -50,7 +50,7 @@ choices();
             url: queryURL3,
             method: "GET",
         }).then(function(response) {
-            const arr = response.sort((a, b) => (a.rating > b.rating) ? 1 : -1)
+            const arr = response.sort((a, b) => (a.rating < b.rating) ? 1 : -1)
             for(let i = 0; i < arr.length; i++){
                 if(arr[i].location == $("#citySearch").val()){
                     console.log(arr[i])
