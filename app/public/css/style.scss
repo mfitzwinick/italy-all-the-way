@@ -1,0 +1,29 @@
+// _base.scss
+
+$font-stack: 'Piazzolla', serif;
+$primary-color: gray;
+$background-color: white;
+$background-img: url("https://handluggageonly.co.uk/wp-content/uploads/2018/02/Hand-Luggage-Only-8-5.jpg");
+$letter-spacing: .2rem;
+$default-padding: 1.5rem;
+$boxshadow: 0px 2px 5px;
+$margin: 2rem; 
+
+body {
+    font: 100% $font-stack;
+    background-image: $background-img;
+    background-size: cover;
+    letter-spacing: $letter-spacing;    
+}
+
+#main,
+#sub1,
+#sub2,
+#carousel{
+    color: $primary-color;
+    padding: $default-padding;
+    margin: $margin; 
+    background-color: $background-color; 
+    text-align: center;
+    box-shadow: $boxshadow;
+}
