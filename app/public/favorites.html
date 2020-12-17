@@ -40,40 +40,66 @@
   </nav>
 
     <!-- body of travel page -->
-
-  <div class="container" id="body">
-    <div class="row">
+    <div class="container" id="body">
+      <div class="row">
         <h1 style="color:#4A5D23;" >Your Favorites</h1>
-        <br>
-        <br>
+      </div>
+      <div class="row">
+          <!-- api container 1 -->
+        
+        <div class="col-md-4">
+          <div class="container" id="main"> 
+            <h4> HOTELS <button id="addfav"><i class="fas fa-star" id="favorite"></i></button></h4>      
+            <div class="card">              
+              <div class="card-body">
+                <h2>Name</h2>
+                <img>{IMAGE}</img>
+                <p>rating</p>
+                <button id="buttonLink"><i class="hotelLink">View more details</i></button>
+  
+              </div>
+            </div>                          
+          </div>
         </div>
-        <!-- api container 1 -->
-    <div class="row"> 
-      <div class="col-md-4">
-        <div class="container" id="main">
-          Your Favorite hotels                          
+  
+          <!-- api container 2 -->
+  
+        <div class="col-md-4">
+          <div class="container" id="sub1">
+            <h4> RESTAURANTS <button id="addfav"><i class="fas fa-star" id="favorite"></i></button></h4>
+            <div class="card">
+              <div class="card-body">
+                <h2>Name</h2>
+                <img>{IMAGE}</img>
+                <p>rating</p>
+                <p>€€€</p>
+                <br>
+                <button id="buttonLink"><i class="hotelLink">View more details</i></button>
+              </div>
+            </div>            
+          </div>          
         </div>
+  
+        <!-- api container 3 -->
+  
+        <div class="col-md-4">
+          <div class="container" id="sub2">
+            <h4> SIGHTSEEING <button id="addfav"><i class="fas fa-star" id="favorite"></i></button></h4>
+            <div class="card">
+              <div class="card-body">
+                <h2>Name</h2>
+                <img>{IMAGE}</img>
+                <p>€€</p>
+                <button id="buttonLink"><i class="hotelLink">View more details</i></button>
+              </div>
+            </div>
+          </div>  
+        </div>
+  
       </div>
-
-        <!-- api container 2 -->
-
-      <div class="col-md-4">
-        <div class="container" id="main">
-          <p> Your favorite restaurants
-          </p>                
-        </div>          
-      </div>
-
-      <!-- api container 3 -->
-
-      <div class="col-md-4">
-        <div class="container" id="main">
-          <p> Must-See Sites</p>
-        </div>  
-      </div>
-
     </div>
-  </div>
+  
+  
 
 
 

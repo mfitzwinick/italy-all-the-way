@@ -72,6 +72,7 @@ italytravel.html is linked to:
 
 # Examples/Screenshots
 
+<img width="1631" alt="ITALIA Today Screenshot" src="https://user-images.githubusercontent.com/72819785/102543410-223afe00-4068-11eb-9b47-3d58f6b59d5e.png">
 ## Future Development
 
 For future development:
