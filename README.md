@@ -2,7 +2,7 @@
 
 ## Description/Purpose
 
-Italia Today is for everyone who loves Italy!  It is a resource for both travelers and non-travelers alike. The user can choose which way they would like to have an Italian experience; either on the road with updated travel resources, or at home, with recipes from our Italian kitchen.
+Italia Today is for everyone who loves Italy!  It is a resource for both travelers and non-travelers alike. The user can choose which way they would like to have an Italian experience; either on the road with updated travel resources, or at home, with recipes from our Italian kitchen.  The user can also save their favorite destinations and experiences on a favorites page.
 
 
 ## Technologies Used
