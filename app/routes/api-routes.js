@@ -28,12 +28,23 @@ module.exports = function(app) {
       res.json(response);
     });
   });
-  app.get("/api/restaurants", function(req, res) {
+  app.get("/api/favorites", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.restaurant.findAll({
-       
+
     }).then(function(response) {
-      // We have access to the attractions as an argument inside of the callback function
+      res.json(response);
+    });
+
+    db.hotel.findAll({
+
+    }).then(function(response) {
+      res.json(response);
+    });
+    
+    db.attraction.findAll({
+
+    }).then(function(response) {
       res.json(response);
     });
   });
@@ -45,7 +56,7 @@ module.exports = function(app) {
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property (req.body)
     db.attraction.create({
-        name:"test"
+        
     }).then(function(response) {
       // We have access to the new attraction as an argument inside of the callback function
       res.json(response);

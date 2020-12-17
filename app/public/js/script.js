@@ -13,11 +13,12 @@ choices();
 
  $("#searchBtn2").on("click", (event) => {
     if($("#citySearch").val() == ""){
+        
         alert("please enter a city")
     }
     else{
-
-         event.preventDefault();
+        event.preventDefault();
+         
         const queryURL1 = "http://localhost:8080/api/restaurants"
         $.ajax({
             header: origin,
@@ -30,7 +31,7 @@ choices();
                     console.log(arr[i])
                 }
             }   
-        })
+        });
         const queryURL2 = "http://localhost:8080/api/attractions"
         $.ajax({
             header: origin,
@@ -43,7 +44,7 @@ choices();
                     console.log(arr[i])
                 }
             }   
-        })
+        });
         const queryURL3 = "http://localhost:8080/api/hotels"
         $.ajax({
             header: origin,
@@ -56,6 +57,21 @@ choices();
                     console.log(arr[i])
                 }
             }   
-        })
+        });
     }
-})
+});
+const favoriteStorage = JSON.parse(localStorage.getItem("favoriteStorage"));
+const favorites = []
+if (favoriteStorage != undefined){
+    favorites = favoriteStorage
+}
+
+
+$("#favBtn").on("click", (event) => {
+    event.preventDefault();
+    favorites.push($("#secretInfo").val())
+    localStorage.setItem("favoriteStorage", JSON.stringify(favorites));
+});
+
+
+
