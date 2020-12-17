@@ -28,7 +28,7 @@ module.exports = function(app) {
       res.json(response);
     });
   });
-  app.get("/api/favorites", function(req, res) {
+  app.get("/api/restaurants", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.restaurant.findAll({
 
@@ -36,17 +36,17 @@ module.exports = function(app) {
       res.json(response);
     });
 
-    db.hotel.findAll({
+    // db.hotel.findAll({
 
-    }).then(function(response) {
-      res.json(response);
-    });
+    // }).then(function(response) {
+    //   res.json(response);
+    // });
     
-    db.attraction.findAll({
+    // db.attraction.findAll({
 
-    }).then(function(response) {
-      res.json(response);
-    });
+    // }).then(function(response) {
+    //   res.json(response);
+    // });
   });
 
   // POST route for saving a new attraction
