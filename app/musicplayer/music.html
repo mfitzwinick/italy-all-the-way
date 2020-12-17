@@ -20,6 +20,12 @@
 <p>Lucio Battisti (1977)</p>
 <div class="c song">c</div><br>
 <p>Andrea Bocelli (1995)</p> 
+<div class="d song">d</div><br>
+<p>Mina (1970)</p> 
+<div class="e song">e</div><br>
+<p>Vasco Rossi (1980)</p>
+<div class="f song">f</div><br>
+<p>Afterhours (1990)</p> 
 
 </main>
 
@@ -45,6 +51,15 @@ song2.src = "siviaggiare.mp3";
 var song3 = new Audio();
 song3.src = "contepartiro.mp3";
 
+var song4 = new Audio();
+song4.src = "epensoate.mp3";
+
+var song5 = new Audio();
+song5.src = "stupendo.mp3";
+
+var song6 = new Audio();
+song6.src = "vogliounapelle.mp3";
+
 function playsong(){
  var songId = this.innerHTML;
  console.log(songId);
@@ -62,31 +77,17 @@ function playsong(){
    song3.play();
    break;
 
-//   Use this if you want to insert more songs
+  case "d":
+   song4.play();
+   break;
 
-//   case "d":
-//    song1.play();
-//    break;
+  case "e":
+   song5.play();
+   break;
 
-//   case "e":
-//    song2.play();
-//    break;
-
-//   case "f":
-//    song3.play();
-//    break;
-
-//   case "g":
-//    song1.play();
-//    break;
-
-//   case "h":
-//    song2.play();
-//    break;
-
-//   case "i":
-//    song3.play();
-//    break;
+  case "f":
+   song6.play();
+   break;
 
   default:
    console.log("wrong input");
@@ -111,31 +112,17 @@ function pausesong(){
    song3.pause();
    break;
 
-//   Use this if you want to insert more songs
+  case "d":
+   song4.pause();
+   break;
 
-//   case "d":
-//    song1.pause();
-//    break;
+  case "e":
+   song5.pause();
+   break;
 
-//   case "e":
-//    song2.pause();
-//    break;
-
-//   case "f":
-//    song3.pause();
-//    break;
-
-//   case "g":
-//    song1.pause();
-//    break;
-
-//   case "h":
-//    song2.pause();
-//    break;
-
-//   case "i":
-//    song3.pause();
-//    break;
+  case "f":
+   song6.pause();
+   break;
 
   default:
    console.log("wrong input");
@@ -154,9 +141,11 @@ function pausesong(){
    }
    
    body {
-       background-image: url("https://eskipaper.com/images/italian-wallpaper-2.jpg");
-   }
-
+  font: 100% "Piazzolla", serif;
+  background-image: url("https://handluggageonly.co.uk/wp-content/uploads/2018/02/Hand-Luggage-Only-8-5.jpg");
+  background-size: cover;
+  letter-spacing: 0.2rem;
+}
    h1{
     text-align: center; font-size: 1.8rem;
     color: rgb(218, 48, 18); padding: 30px 0; 
@@ -200,6 +189,32 @@ function pausesong(){
    width: 300px;
    height: 300px;
    }
+
+   .d{
+   background-image: url('mina.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   width: 300px;
+   height: 300px;
+   }
+
+   .e{
+   background-image: url('vasco.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   width: 300px;
+   height: 300px;
+   }
+
+   .f{
+   background-image: url('afterhours.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   width: 300px;
+   height: 300px;
+   }
+
+  
    
 
    
