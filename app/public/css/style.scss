@@ -8,6 +8,7 @@ $letter-spacing: .2rem;
 $default-padding: 1.5rem;
 $boxshadow: 0px 2px 5px;
 $margin: 2rem; 
+$h1color: #4A5D23;
 
 body {
     font: 100% $font-stack;
@@ -26,4 +27,19 @@ body {
     background-color: $background-color; 
     text-align: center;
     box-shadow: $boxshadow;
+}
+
+#addfav{
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+#searchBtn2{
+    background-color:$background-color;
+    color: $h1color;
+}
+
+h1,
+h4{
+    color: $h1color;
 }
