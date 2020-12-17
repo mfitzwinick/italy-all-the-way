@@ -41,4 +41,46 @@ h4{
   color:#4A5D23;
 }
 
+
+.a, .b, .c, .d, .e, .f{ 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 300px;
+  height: 300px; 
+  
+}
+
+.a{
+  background-image: url('../music/musicplayer/modugno.png');  
+}
+
+.b{
+background-image: url('../music/musicplayer/battisti.jpg');
+}
+
+.c{
+background-image: url('../music/musicplayer/bocelli.jpg');
+}
+
+.d{
+background-image: url('../music/musicplayer/mina.jpg');
+}
+
+.e{
+background-image: url('../music/musicplayer/vasco.jpg');
+}
+
+.f{
+background-image: url('../music/musicplayer/afterhours.jpg');
+}
+
+.song{
+  font-size: 0;
+}
+
+.main{
+  width: auto;
+  height: auto;
+}
+
 /*# sourceMappingURL=output.css.map */
