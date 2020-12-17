@@ -12,7 +12,7 @@ body {
   color: gray;
   padding: 1.5rem;
   margin: 2rem;
-  background-color: white;
+  background-color: #f2f3f4;
   text-align: center;
   box-shadow: 0px 2px 5px;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 #searchBtn2{
-  background-color: white;
+  background-color: #f2f3f4;
   color:#4A5D23;
 }
 
@@ -76,11 +76,32 @@ background-image: url('../music/musicplayer/afterhours.jpg');
 
 .song{
   font-size: 0;
+  width: 30%; 
+  height: 160px;
+  box-shadow: 2px 2px 5px rgb(243, 243, 243);
+  border-radius: 10px; 
+  cursor: pointer;
+  padding: 10%;
 }
 
-.main{
-  width: auto;
-  height: auto;
-}
+main{
+  margin: 4%;
+  width: 100%; 
+  /* display: flex;  */
+  justify-content: space-around;  
+  /* flex-wrap: wrap; */
+  background-color: transparent;
+ }
+
+ #music{
+   text-align: center;
+   width: 100%; 
+   border: 1px solid rgb(177, 170, 170);
+   /* display: flex;  */
+   justify-content: space-around;  
+   /* flex-wrap: wrap; */
+   background-color: #f2f3f4;
+ }
+
 
 /*# sourceMappingURL=output.css.map */

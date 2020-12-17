@@ -11,9 +11,18 @@ module.exports = function(app) {
   });
 
 
-  app.get("/italyhome", function(req, res) {
+  app.get("/music", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/music.html"));
+  });
+
+  app.get("/favorites", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/favorites.html"));
+  });
+
+  app.get("/home", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/italyhome.html"));
   });
+
   app.get("/testing", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/backendTest.html"));
   });
