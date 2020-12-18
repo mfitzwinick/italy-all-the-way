@@ -68,7 +68,7 @@ The site is built with five html pages: index.html (home page), italyhome.html (
 
 This website is deployed at:
 
-https://powerful-forest-82975.herokuapp.com/
+https://nameless-plateau-64183.herokuapp.com/index.html
 
 
 ## Future Development
@@ -78,3 +78,4 @@ For future development:
 - Ablity to book hotels
 - Ablity to make dinner reservations
 - Ability to schedule sightseeing tours
+- Phonetic pronounciations written out and/or recordings of the common phrases and translations of the phrases for the user to get a better feel of the language.
