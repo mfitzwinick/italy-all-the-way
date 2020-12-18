@@ -34,7 +34,7 @@ body {
   color: gold;
 }
 
-#addfav{
+.addfav{
   background-color: transparent;
   border-color: transparent;
 }
@@ -91,4 +91,4 @@ background-image: url('../music/musicplayer/afterhours.jpg');
   height: auto;
 }
 
-/*# sourceMappingURL=output.css.map */
+
