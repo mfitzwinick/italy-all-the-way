@@ -66,6 +66,10 @@ The site is built with five html pages: index.html (home page), italyhome.html (
 
 <img width="1631" alt="ITALIA Today Screenshot" src="https://user-images.githubusercontent.com/72819785/102543410-223afe00-4068-11eb-9b47-3d58f6b59d5e.png">
 
+This website is deployed at:
+
+https://powerful-forest-82975.herokuapp.com/
+
 
 ## Future Development
 
