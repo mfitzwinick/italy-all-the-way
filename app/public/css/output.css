@@ -51,10 +51,13 @@ h4{
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .secret{
   font-size: 0px;
 }
 =======
+=======
+>>>>>>> ad65815628724c4c531f907d857eb159e7f4e860
 .a, .b, .c, .d, .e, .f{ 
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -96,5 +99,9 @@ background-image: url('../music/musicplayer/afterhours.jpg');
   height: auto;
 }
 
+<<<<<<< HEAD
 >>>>>>> 53080ff9edd010eb149e897c11629b919cdf40b9
 /*# sourceMappingURL=output.css.map */
+=======
+
+>>>>>>> ad65815628724c4c531f907d857eb159e7f4e860
