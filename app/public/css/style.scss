@@ -2,18 +2,23 @@
 
 $font-stack: 'Piazzolla', serif;
 $primary-color: gray;
-$background-color: white;
+$background-color: #f2f3f4;
 $background-img: url("https://handluggageonly.co.uk/wp-content/uploads/2018/02/Hand-Luggage-Only-8-5.jpg");
 $letter-spacing: .2rem;
 $default-padding: 1.5rem;
 $boxshadow: 0px 2px 5px;
 $margin: 2rem; 
 $h1color: #4A5D23;
+$inv: transparent;
+$fav: gold;
+$link: #585858;
+$linkhov: #800020!important;
 
 body {
     font: 100% $font-stack;
     background-image: $background-img;
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: repeat;
     letter-spacing: $letter-spacing;    
 }
 
@@ -29,9 +34,15 @@ body {
     box-shadow: $boxshadow;
 }
 
+
+#favorite{
+    color: $fav;
+}
+
+
 .addfav{
-    background-color: transparent;
-    border-color: transparent;
+    background-color: $inv;
+    border-color: $inv;
   }
   
 #searchBtn2{
@@ -44,3 +55,74 @@ h2,
 h4{
     color: $h1color;
 }
+
+#food{
+    color: $link;
+}
+
+#food:hover {
+    color: $linkhov;
+}
+
+#italiatoday{
+    width:15%;
+    height:auto;
+}
+
+.a, .b, .c, .d, .e, .f{ 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;     
+  } 
+
+
+  .a{
+    background-image: url('../music/musicplayer/modugno.png');  
+  }
+  
+  .b{
+  background-image: url('../music/musicplayer/battisti.jpg');
+  }
+  
+  .c{
+  background-image: url('../music/musicplayer/bocelli.jpg');
+  }
+  
+  .d{
+  background-image: url('../music/musicplayer/mina.jpg');
+  }
+  
+  .e{
+  background-image: url('../music/musicplayer/vasco.jpg');
+  }
+  
+  .f{
+  background-image: url('../music/musicplayer/afterhours.jpg');
+  }
+
+  .song{
+    font-size: 0;
+    width: 30%; 
+    height: 160px;
+    box-shadow: 2px 2px 5px rgb(243, 243, 243);
+    border-radius: 10px; 
+    cursor: pointer;
+    padding: 10%;
+  }
+
+  main{
+    margin: 4%;
+    width: 100%; 
+    justify-content: space-around;  
+    background-color: transparent;
+   }
+  
+   #music{
+    text-align: center;
+    width: 100%; 
+    border: 1px solid rgb(177, 170, 170);
+    justify-content: space-around;   
+    background-color: $background-color;
+  }
+ 
