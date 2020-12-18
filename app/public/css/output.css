@@ -26,7 +26,7 @@ body {
   color: gold;
 }
 
-#addfav{
+.addfav{
   background-color: transparent;
   border-color: transparent;
 }
@@ -41,4 +41,8 @@ h4{
   color:#4A5D23;
 }
 
+
+.secret{
+  font-size: 0px;
+}
 /*# sourceMappingURL=output.css.map */
