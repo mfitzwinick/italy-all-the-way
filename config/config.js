@@ -1,17 +1,20 @@
-module.exports = {
-  development: {
-    dialect: 'sqlite',
-    storage: './db.development.sqlite'
-  },
-  test: {
-    dialect: 'sqlite',
-    storage: ':memory:'
-  },
-  production: {
-    host: process.env.host,
-    port: process.env.port,
-    user: process.env.username,
-    password: process.env.password,
-    database: process.env.database
-  }
+module.exports= {
+    "development": {
+      username: process.env.myusername,
+      password: process.env.password,
+      database: process.env.database,
+      host: process.env.host,
+      dialect: 'mysql',    
+    },
+    "test": {
+      "username": process.env.myusername,
+      "password": process.env.password,
+      "database": process.env.databasetest,
+      "host": process.env.host,
+      "dialect": 'mysql',      
+    },
+    "production": {
+      "use_env_variable": "JAWSDB_URL",
+      "dialect": 'mysql',    
+    }  
 }
