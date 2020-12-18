@@ -9,7 +9,8 @@ body {
 #main,
 #sub1,
 #sub2,
-#carousel {
+#carousel,
+#submit {
   color: gray;
   padding: 1.5rem;
   margin: 2rem;
