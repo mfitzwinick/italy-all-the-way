@@ -34,11 +34,13 @@ body {
     box-shadow: $boxshadow;
 }
 
+
 #favorite{
     color: $fav;
 }
 
-#addfav{
+
+.addfav{
     background-color: $inv;
     border-color: $inv;
   }

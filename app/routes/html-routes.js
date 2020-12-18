@@ -22,9 +22,14 @@ module.exports = function(app) {
   app.get("/home", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/italyhome.html"));
   });
+<<<<<<< HEAD
 
   app.get("/testing", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/backendTest.html"));
+=======
+  app.get("/favorites", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/favorites.html"));
+>>>>>>> ad65815628724c4c531f907d857eb159e7f4e860
   });
 
 };

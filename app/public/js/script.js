@@ -32,13 +32,13 @@ choices();
             for(let i = 0; i < arr.length; i++){
                 if(arr[i].location.toLowerCase() == $("#citySearch").val().toLowerCase()){
                     const card = $(`<div class="container" id="sub1">
-                    <h4> Restaurants <button id="addfav"><i class="fas fa-star" id="favorite"></i></button></h4>
+                    <h4> Restaurants <button class="addfav"><i class="fas fa-star" id="favorite restaurant/`+arr[i].id+`"></i></button></h4>
                     <div class="card">
                       <div class="card-body">
                         <h2 class="">`+arr[i].name+`</h2>
                         <img src="`+arr[i].image+`" width = 200px></img>
-                        <p>`+ arr[i].rating+`/5</p>
-                        <p>`+arr[i].price+`</p>
+                        <p>Rating: `+ arr[i].rating+`/5</p>
+                        <p>Price: `+arr[i].price+`</p>
                         <br>
                         <a target = "_blank"href = "`+ arr[i].url+`"><button id="buttonLink"><i class="hotelLink">View more details</i></button></a>
                       </div>
@@ -58,12 +58,13 @@ choices();
             for(let i = 0; i < arr.length; i++){
                 if(arr[i].location.toLowerCase() == $("#citySearch").val().toLowerCase()){
                     const card = $(`<div class="container" id="sub1">
-                    <h4> Attractions <button id="addfav"><i class="fas fa-star" id="favorite"></i></button></h4>
+                    <h4> Attractions <button class="addfav"><i class="fas fa-star" id="favorite attraction/`+arr[i].id+`"></i></button></h4>
                     <div class="card">
                       <div class="card-body">
                         <h2 class="">`+arr[i].name+`</h2>
                         <img src="`+arr[i].image+`" width = 200px></img>
-                        <p>`+arr[i].category+`</p>
+                        <p>Category: `+arr[i].category+`</p>
+                        <p>Rating: `+ arr[i].rating+`/5</p>
                         <br>
                         <a target = "_blank"href = "`+ arr[i].url+`"><button id="buttonLink"><i class="hotelLink">View more details</i></button></a>
                       </div>
@@ -83,13 +84,12 @@ choices();
             for(let i = 0; i < arr.length; i++){
                 if(arr[i].location.toLowerCase() == $("#citySearch").val().toLowerCase()){
                     const card = $(`<div class="container" id="sub1">
-                    <h4> Hotels<button id="addfav"><i class="fas fa-star" id="favorite"></i></button></h4>
+                    <h4> Hotels<button class="addfav"><i class="fas fa-star" id="favorite hotel/`+arr[i].id+`"></i></button></h4>
                     <div class="card">
                       <div class="card-body">
                         <h2 class="">`+arr[i].name+`</h2>
                         <img src="`+arr[i].image+`" width = 200px></img>
-                        <p>`+ arr[i].rating+`/5</p>
-                        <p>`+arr[i].price+`</p>
+                        <p>Rating: `+ arr[i].rating+`/5</p>
                         <br>
                         <a target = "_blank"href = "`+ arr[i].url+`"><button id="buttonLink"><i class="hotelLink">View more details</i></button></a>
                       </div>
@@ -97,21 +97,41 @@ choices();
                   </div>`)
                 $("#hotels").append(card)
                 }
-            }   
+            }  
         });
+        
     }
 });
-const favoriteStorage = JSON.parse(localStorage.getItem("favoriteStorage"));
-const favorites = []
-if (favoriteStorage != undefined){
-    favorites = favoriteStorage
-}
+
+// const favoriteStorage = JSON.parse(localStorage.getItem("favoriteStorage"));
 
 
-$(".addfav").on("click", (event) => {
-    event.preventDefault();
-    favorites.push($("#secretInfo").val())
-    localStorage.setItem("favoriteStorage", JSON.stringify(favorites));
+
+
+$(document).on("click",".addfav", (event) => {
+    var favoriteStorage = JSON.parse(localStorage.getItem("favoriteStorage"));
+    var favorites = []
+    if (favoriteStorage != undefined){
+        favorites = favoriteStorage
+    }
+    
+   event.preventDefault();
+    
+    if(event.target.id.split(" ")[1] == null){
+        alert("Please try again")
+    }
+    else{
+        favorites.push(event.target.id.split(" ")[1])
+
+        localStorage.setItem("favoriteStorage", JSON.stringify(favorites));
+
+        
+        
+        alert("Added to Favorites!")
+    }
+    
+    
+    
 });
 
 
