@@ -10,7 +10,7 @@ function onLoad(){
     }
     else{
 
-        const queryURL1 = "http://localhost:8080/api/restaurants"
+        const queryURL1 = "https://powerful-forest-82975.herokuapp.com/api/restaurants"
         $.ajax({
             header: origin,
             url: queryURL1,
@@ -41,7 +41,7 @@ function onLoad(){
                 }
             }   
         });
-        const queryURL2 = "http://localhost:8080/api/attractions"
+        const queryURL2 = "https://powerful-forest-82975.herokuapp.com/api/attractions"
         $.ajax({
             header: origin,
             url: queryURL2,
@@ -71,7 +71,7 @@ function onLoad(){
                 }
             }   
         });
-        const queryURL3 = "http://localhost:8080/api/hotels"
+        const queryURL3 = "https://powerful-forest-82975.herokuapp.com/api/hotels"
         $.ajax({
             header: origin,
             url: queryURL3,
