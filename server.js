@@ -10,6 +10,7 @@ var express = require("express");
 // Sets up the Express App
 // =============================================================
 var app = express();
+var dotenv = require("dotenv").config();
 var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
