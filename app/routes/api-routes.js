@@ -35,28 +35,26 @@ module.exports = function(app) {
     }).then(function(response) {
       res.json(response);
     });
-
-    // db.hotel.findAll({
-
-    // }).then(function(response) {
-    //   res.json(response);
-    // });
-    
-    // db.attraction.findAll({
-
-    // }).then(function(response) {
-    //   res.json(response);
-    // });
   });
+  app.get("/api/contacts", function(req,res){
+    db.contact.findAll({
+      
+    }).then(function(response) {
+      res.json(response);
+    });
+  });
+ 
 
   // POST route for saving a new attraction
-  app.post("/api/attractions", function(req, res) {
+  app.post("/api/contacts/", function(req, res) {
     console.log(req.body);
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property (req.body)
-    db.attraction.create({
-        
+    db.contact.create({
+        name:req.body.name,
+        email:req.body.email,
+        message:req.body.message
     }).then(function(response) {
       // We have access to the new attraction as an argument inside of the callback function
       res.json(response);
@@ -64,11 +62,6 @@ module.exports = function(app) {
   });
 
   // DELETE route for deleting attractions. We can get the id of the attraction we want to delete from
-  // req.params.id
-  app.delete("/api/attractions/:id", function(req, res) {
-
-  });
-
   // PUT route for updating attractions. We can get the updated attraction from req.body
   app.put("/api/attractions", function(req, res) {
 

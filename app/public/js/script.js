@@ -134,5 +134,27 @@ $(document).on("click",".addfav", (event) => {
     
 });
 
+function createMessage(){
+    
+    var userInfo = {
+        name: $("#name").val().trim(),
+        email: $("#email").val().trim(),
+        message: $("#location").val().trim()
+    }
+    var queryURL = "http://localhost:8080/api/contacts/"
+    $.ajax({
+        header: origin,
+        url: queryURL,
+        method: "POST",
+        data: userInfo
+    })
+    location.reload()
 
+};
 
+$("#submitBtn").on("click", (event)=>{
+   console.log($("#email").val(),
+   $("#name").val(),
+   $("#location").val()) 
+    createMessage()
+})
