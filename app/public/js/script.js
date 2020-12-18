@@ -20,7 +20,7 @@ choices();
         event.preventDefault();
         $("#attractions").html("")
         $("#hotels").html("")
-        $("#restaurants").html("")
+        $("#restaurants").html("")        
          
         const queryURL1 = "http://localhost:8080/api/restaurants"
         $.ajax({
