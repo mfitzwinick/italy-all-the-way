@@ -34,7 +34,7 @@ body {
   color: gold;
 }
 
-#addfav{
+.addfav{
   background-color: transparent;
   border-color: transparent;
 }
@@ -112,4 +112,4 @@ main{
  }
 
 
-/*# sourceMappingURL=output.css.map */
+
